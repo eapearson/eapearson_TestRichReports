@@ -1,9 +1,9 @@
 #
 # define display information
 #
-name: Filter Contigs
+name: Generate Report
 tooltip: |
-    Filters the contigs by removing contigs below a length threshold
+    Generate app report based on the 
 screenshots: []
 
 icon: icon.png
@@ -27,15 +27,15 @@ suggestions:
 # Configure the display and description of parameters
 #
 parameters :
-    contigset_id :
+    direct_html :
         ui-name : |
-            Contig Set Name
+            Direct Html
         short-hint : |
-            The contig set to filter (will be overwritten)
-    min_length :
+            Direct html
+    summary :
         ui-name : |
-            Min Length Threshold
+            Summary
         short-hint : |
-            All contigs below this length will be removed
+            Summary
 description : |
-    <p>This is a simple method designed to illustrate the KBase SDK.</p>
+    <p>This method allows one to create KBase Report objects containging rich html.</p>

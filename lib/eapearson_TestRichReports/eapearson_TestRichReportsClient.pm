@@ -110,9 +110,9 @@ sub new
 
 
 
-=head2 filter_contigs
+=head2 generate_report
 
-  $return = $obj->filter_contigs($params)
+  $return = $obj->generate_report($params)
 
 =over 4
 
@@ -121,22 +121,14 @@ sub new
 =begin html
 
 <pre>
-$params is an eapearson_TestRichReports.FilterContigsParams
-$return is an eapearson_TestRichReports.FilterContigsResults
-FilterContigsParams is a reference to a hash where the following keys are defined:
-	workspace has a value which is an eapearson_TestRichReports.workspace_name
-	contigset_id has a value which is an eapearson_TestRichReports.contigset_id
-	min_length has a value which is an int
-workspace_name is a string
-contigset_id is a string
-FilterContigsResults is a reference to a hash where the following keys are defined:
+$params is an eapearson_TestRichReports.GenerateReportParams
+$return is an eapearson_TestRichReports.GenerateReportResults
+GenerateReportParams is a reference to a hash where the following keys are defined:
+	direct_html has a value which is a string
+	summary_content has a value which is a string
+GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
 	report_ref has a value which is a string
-	new_contigset_ref has a value which is an eapearson_TestRichReports.ws_contigset_id
-	n_initial_contigs has a value which is an int
-	n_contigs_removed has a value which is an int
-	n_contigs_remaining has a value which is an int
-ws_contigset_id is a string
 
 </pre>
 
@@ -144,22 +136,14 @@ ws_contigset_id is a string
 
 =begin text
 
-$params is an eapearson_TestRichReports.FilterContigsParams
-$return is an eapearson_TestRichReports.FilterContigsResults
-FilterContigsParams is a reference to a hash where the following keys are defined:
-	workspace has a value which is an eapearson_TestRichReports.workspace_name
-	contigset_id has a value which is an eapearson_TestRichReports.contigset_id
-	min_length has a value which is an int
-workspace_name is a string
-contigset_id is a string
-FilterContigsResults is a reference to a hash where the following keys are defined:
+$params is an eapearson_TestRichReports.GenerateReportParams
+$return is an eapearson_TestRichReports.GenerateReportResults
+GenerateReportParams is a reference to a hash where the following keys are defined:
+	direct_html has a value which is a string
+	summary_content has a value which is a string
+GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
 	report_ref has a value which is a string
-	new_contigset_ref has a value which is an eapearson_TestRichReports.ws_contigset_id
-	n_initial_contigs has a value which is an int
-	n_contigs_removed has a value which is an int
-	n_contigs_remaining has a value which is an int
-ws_contigset_id is a string
 
 
 =end text
@@ -172,7 +156,7 @@ Filter contigs in a ContigSet by DNA length
 
 =cut
 
- sub filter_contigs
+ sub generate_report
 {
     my($self, @args) = @_;
 
@@ -181,7 +165,7 @@ Filter contigs in a ContigSet by DNA length
     if ((my $n = @args) != 1)
     {
 	Bio::KBase::Exceptions::ArgumentValidationError->throw(error =>
-							       "Invalid argument count for function filter_contigs (received $n, expecting 1)");
+							       "Invalid argument count for function generate_report (received $n, expecting 1)");
     }
     {
 	my($params) = @args;
@@ -189,31 +173,31 @@ Filter contigs in a ContigSet by DNA length
 	my @_bad_arguments;
         (ref($params) eq 'HASH') or push(@_bad_arguments, "Invalid type for argument 1 \"params\" (value was \"$params\")");
         if (@_bad_arguments) {
-	    my $msg = "Invalid arguments passed to filter_contigs:\n" . join("", map { "\t$_\n" } @_bad_arguments);
+	    my $msg = "Invalid arguments passed to generate_report:\n" . join("", map { "\t$_\n" } @_bad_arguments);
 	    Bio::KBase::Exceptions::ArgumentValidationError->throw(error => $msg,
-								   method_name => 'filter_contigs');
+								   method_name => 'generate_report');
 	}
     }
 
     my $url = $self->{url};
     my $result = $self->{client}->call($url, $self->{headers}, {
-	    method => "eapearson_TestRichReports.filter_contigs",
+	    method => "eapearson_TestRichReports.generate_report",
 	    params => \@args,
     });
     if ($result) {
 	if ($result->is_error) {
 	    Bio::KBase::Exceptions::JSONRPC->throw(error => $result->error_message,
 					       code => $result->content->{error}->{code},
-					       method_name => 'filter_contigs',
+					       method_name => 'generate_report',
 					       data => $result->content->{error}->{error} # JSON::RPC::ReturnObject only supports JSONRPC 1.1 or 1.O
 					      );
 	} else {
 	    return wantarray ? @{$result->result} : $result->result->[0];
 	}
     } else {
-        Bio::KBase::Exceptions::HTTP->throw(error => "Error invoking method filter_contigs",
+        Bio::KBase::Exceptions::HTTP->throw(error => "Error invoking method generate_report",
 					    status_line => $self->{client}->status_line,
-					    method_name => 'filter_contigs',
+					    method_name => 'generate_report',
 				       );
     }
 }
@@ -261,16 +245,16 @@ sub version {
             Bio::KBase::Exceptions::JSONRPC->throw(
                 error => $result->error_message,
                 code => $result->content->{code},
-                method_name => 'filter_contigs',
+                method_name => 'generate_report',
             );
         } else {
             return wantarray ? @{$result->result} : $result->result->[0];
         }
     } else {
         Bio::KBase::Exceptions::HTTP->throw(
-            error => "Error invoking method filter_contigs",
+            error => "Error invoking method generate_report",
             status_line => $self->{client}->status_line,
-            method_name => 'filter_contigs',
+            method_name => 'generate_report',
         );
     }
 }
@@ -307,69 +291,7 @@ sub _validate_version {
 
 
 
-=head2 contigset_id
-
-=over 4
-
-
-
-=item Description
-
-A string representing a ContigSet id.
-
-
-=item Definition
-
-=begin html
-
-<pre>
-a string
-</pre>
-
-=end html
-
-=begin text
-
-a string
-
-=end text
-
-=back
-
-
-
-=head2 workspace_name
-
-=over 4
-
-
-
-=item Description
-
-A string representing a workspace name.
-
-
-=item Definition
-
-=begin html
-
-<pre>
-a string
-</pre>
-
-=end html
-
-=begin text
-
-a string
-
-=end text
-
-=back
-
-
-
-=head2 FilterContigsParams
+=head2 GenerateReportParams
 
 =over 4
 
@@ -381,9 +303,8 @@ a string
 
 <pre>
 a reference to a hash where the following keys are defined:
-workspace has a value which is an eapearson_TestRichReports.workspace_name
-contigset_id has a value which is an eapearson_TestRichReports.contigset_id
-min_length has a value which is an int
+direct_html has a value which is a string
+summary_content has a value which is a string
 
 </pre>
 
@@ -392,9 +313,8 @@ min_length has a value which is an int
 =begin text
 
 a reference to a hash where the following keys are defined:
-workspace has a value which is an eapearson_TestRichReports.workspace_name
-contigset_id has a value which is an eapearson_TestRichReports.contigset_id
-min_length has a value which is an int
+direct_html has a value which is a string
+summary_content has a value which is a string
 
 
 =end text
@@ -403,39 +323,7 @@ min_length has a value which is an int
 
 
 
-=head2 ws_contigset_id
-
-=over 4
-
-
-
-=item Description
-
-The workspace ID for a ContigSet data object.
-@id ws KBaseGenomes.ContigSet
-
-
-=item Definition
-
-=begin html
-
-<pre>
-a string
-</pre>
-
-=end html
-
-=begin text
-
-a string
-
-=end text
-
-=back
-
-
-
-=head2 FilterContigsResults
+=head2 GenerateReportResults
 
 =over 4
 
@@ -449,10 +337,6 @@ a string
 a reference to a hash where the following keys are defined:
 report_name has a value which is a string
 report_ref has a value which is a string
-new_contigset_ref has a value which is an eapearson_TestRichReports.ws_contigset_id
-n_initial_contigs has a value which is an int
-n_contigs_removed has a value which is an int
-n_contigs_remaining has a value which is an int
 
 </pre>
 
@@ -463,10 +347,6 @@ n_contigs_remaining has a value which is an int
 a reference to a hash where the following keys are defined:
 report_name has a value which is a string
 report_ref has a value which is a string
-new_contigset_ref has a value which is an eapearson_TestRichReports.ws_contigset_id
-n_initial_contigs has a value which is an int
-n_contigs_removed has a value which is an int
-n_contigs_remaining has a value which is an int
 
 
 =end text

@@ -329,10 +329,10 @@ class Application(object):
         self.serverlog.set_log_level(6)
         self.rpc_service = JSONRPCServiceCustom()
         self.method_authentication = dict()
-        self.rpc_service.add(impl_eapearson_TestRichReports.filter_contigs,
-                             name='eapearson_TestRichReports.filter_contigs',
+        self.rpc_service.add(impl_eapearson_TestRichReports.generate_report,
+                             name='eapearson_TestRichReports.generate_report',
                              types=[dict])
-        self.method_authentication['eapearson_TestRichReports.filter_contigs'] = 'required' # noqa
+        self.method_authentication['eapearson_TestRichReports.generate_report'] = 'required' # noqa
         self.rpc_service.add(impl_eapearson_TestRichReports.status,
                              name='eapearson_TestRichReports.status',
                              types=[dict])

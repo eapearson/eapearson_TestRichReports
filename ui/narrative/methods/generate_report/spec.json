@@ -11,26 +11,25 @@
     },
     "parameters": [ 
         {
-            "id": "contigset_id",
-            "optional": false,
+            "id": "direct_html",
+            "optional": true,
             "advanced": false,
             "allow_multiple": false,
-            "default_values": [ "" ],
-            "field_type": "text",
+            "default_values": [""],
+            "field_type": "textarea",
             "text_options": {
-                "valid_ws_types": [ "KBaseGenomes.ContigSet" ]
+
             }
         },
         {
-            "id": "min_length",
-            "optional": false,
+            "id": "summary",
+            "optional": true,
             "advanced": false,
             "allow_multiple": false,
-            "default_values": [ "" ],
-            "field_type": "text",
+            "default_values": [""],
+            "field_type": "textarea",
             "text_options": {
-                "validate_as": "int",
-                "min_integer" : 0
+
             }
         }
     ],
@@ -38,19 +37,19 @@
         "service-mapping": {
             "url": "",
             "name": "eapearson_TestRichReports",
-            "method": "filter_contigs",
+            "method": "generate_report",
             "input_mapping": [
                 {
                     "narrative_system_variable": "workspace",
                     "target_property": "workspace"
                 },
                 {
-                    "input_parameter": "contigset_id",
-                    "target_property": "contigset_id"
+                    "input_parameter": "direct_html",
+                    "target_property": "direct_html"
                 },
                 {
-                    "input_parameter": "min_length",
-                    "target_property": "min_length"
+                    "input_parameter": "summary",
+                    "target_property": "summary"
                 }
             ],
             "output_mapping": [
@@ -63,28 +62,8 @@
                     "target_property": "report_ref"
                 },
                 {
-                    "service_method_output_path": [0,"report_ref"],
-                    "target_property": "report_ref"
-                },
-                {
                     "constant_value": "5",
                     "target_property": "report_window_line_height"
-                },
-                {
-                    "service_method_output_path": [0],
-                    "target_property": "contig_filter_result"
-                },
-                {
-                    "input_parameter": "contigset_id",
-                    "target_property": "input_contigset_id"
-                },
-                {
-                    "input_parameter": "min_length",
-                    "target_property": "input_min_length"
-                },
-                {
-                    "narrative_system_variable": "workspace",
-                    "target_property": "workspace_name"
                 }
             ]
         }

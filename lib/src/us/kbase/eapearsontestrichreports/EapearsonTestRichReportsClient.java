@@ -164,20 +164,20 @@ public class EapearsonTestRichReportsClient {
     }
 
     /**
-     * <p>Original spec-file function name: filter_contigs</p>
+     * <p>Original spec-file function name: generate_report</p>
      * <pre>
      * Filter contigs in a ContigSet by DNA length
      * </pre>
-     * @param   params   instance of type {@link us.kbase.eapearsontestrichreports.FilterContigsParams FilterContigsParams}
-     * @return   instance of type {@link us.kbase.eapearsontestrichreports.FilterContigsResults FilterContigsResults}
+     * @param   params   instance of type {@link us.kbase.eapearsontestrichreports.GenerateReportParams GenerateReportParams}
+     * @return   instance of type {@link us.kbase.eapearsontestrichreports.GenerateReportResults GenerateReportResults}
      * @throws IOException if an IO exception occurs
      * @throws JsonClientException if a JSON RPC exception occurs
      */
-    public FilterContigsResults filterContigs(FilterContigsParams params, RpcContext... jsonRpcContext) throws IOException, JsonClientException {
+    public GenerateReportResults generateReport(GenerateReportParams params, RpcContext... jsonRpcContext) throws IOException, JsonClientException {
         List<Object> args = new ArrayList<Object>();
         args.add(params);
-        TypeReference<List<FilterContigsResults>> retType = new TypeReference<List<FilterContigsResults>>() {};
-        List<FilterContigsResults> res = caller.jsonrpcCall("eapearson_TestRichReports.filter_contigs", args, retType, true, true, jsonRpcContext, this.serviceVersion);
+        TypeReference<List<GenerateReportResults>> retType = new TypeReference<List<GenerateReportResults>>() {};
+        List<GenerateReportResults> res = caller.jsonrpcCall("eapearson_TestRichReports.generate_report", args, retType, true, true, jsonRpcContext, this.serviceVersion);
         return res.get(0);
     }
 

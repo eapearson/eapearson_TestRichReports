@@ -1,0 +1,203 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AUTH	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^AUTH = 'auth-server-url'$/;"	kind:variable	line:23
+Application	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^class Application(object):$/;"	kind:class	line:307
+BaseClient	lib/eapearson_TestRichReports/baseclient.py	/^class BaseClient(object):$/;"	kind:class	line:96
+ConfigParser	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from ConfigParser import ConfigParser$/;"	kind:namespace	line:14
+ConfigParser	scripts/prepare_deploy_cfg.py	/^from ConfigParser import ConfigParser$/;"	kind:namespace	line:5
+ConfigParser	test/eapearson_TestRichReports_server_test.py	/^    from ConfigParser import ConfigParser  # py2$/;"	kind:namespace	line:10
+ConfigParser	test/eapearson_TestRichReports_server_test.py	/^    from configparser import ConfigParser  # py3$/;"	kind:namespace	line:12
+DEPLOY	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^DEPLOY = 'KB_DEPLOYMENT_CONFIG'$/;"	kind:variable	line:21
+F401	test/eapearson_TestRichReports_server_test.py	/^from pprint import pprint  # noqa: F401$/;"	kind:namespace	line:14
+F401	test/eapearson_TestRichReports_server_test.py	/^import json  # noqa: F401$/;"	kind:namespace	line:4
+F401	test/eapearson_TestRichReports_server_test.py	/^import os  # noqa: F401$/;"	kind:namespace	line:3
+GIT_COMMIT_HASH	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_COMMIT_HASH = ""$/;"	kind:variable	line:30
+GIT_URL	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_URL = ""$/;"	kind:variable	line:29
+GetoptError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from getopt import getopt, GetoptError$/;"	kind:namespace	line:9
+IgnorePep8	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsImpl import eapearson_TestRichReports  # noqa @IgnorePep8$/;"	kind:namespace	line:48
+InvalidParamsError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    JSONRPCError, InvalidRequestError$/;"	kind:namespace	line:11
+InvalidRequestError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    JSONRPCError, InvalidRequestError$/;"	kind:namespace	line:11
+JSONObjectEncoder	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^class JSONObjectEncoder(json.JSONEncoder):$/;"	kind:class	line:52
+JSONRPCError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    JSONRPCError, InvalidRequestError$/;"	kind:namespace	line:11
+JSONRPCService	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    JSONRPCError, InvalidRequestError$/;"	kind:namespace	line:11
+JSONRPCServiceCustom	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^class JSONRPCServiceCustom(JSONRPCService):$/;"	kind:class	line:64
+JSONServerError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from jsonrpcbase import ServerError as JSONServerError$/;"	kind:namespace	line:12
+KBaseAuth	lib/eapearson_TestRichReports/authclient.py	/^class KBaseAuth(object):$/;"	kind:class	line:55
+KeywordError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    JSONRPCError, InvalidRequestError$/;"	kind:namespace	line:11
+MethodContext	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^class MethodContext(dict):$/;"	kind:class	line:191
+MethodContext	test/eapearson_TestRichReports_server_test.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsServer import MethodContext$/;"	kind:namespace	line:18
+Process	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from multiprocessing import Process$/;"	kind:namespace	line:8
+Reimport	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    from baseclient import BaseClient as _BaseClient  # @Reimport$/;"	kind:namespace	line:17
+SERVICE	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^SERVICE = 'KB_SERVICE_NAME'$/;"	kind:variable	line:22
+ServerError	lib/eapearson_TestRichReports/baseclient.py	/^class ServerError(Exception):$/;"	kind:class	line:71
+ServerError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^class ServerError(Exception):$/;"	kind:class	line:271
+StringIO	scripts/prepare_deploy_cfg.py	/^import StringIO$/;"	kind:namespace	line:6
+Template	scripts/prepare_deploy_cfg.py	/^from jinja2 import Template$/;"	kind:namespace	line:4
+TokenCache	lib/eapearson_TestRichReports/authclient.py	/^class TokenCache(object):$/;"	kind:class	line:14
+UnusedImport	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    from .baseclient import BaseClient as _BaseClient  # @UnusedImport$/;"	kind:namespace	line:14
+VERSION	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    VERSION = "0.0.1"$/;"	kind:variable	line:28
+_AJ	lib/eapearson_TestRichReports/baseclient.py	/^_AJ = 'application\/json'$/;"	kind:variable	line:27
+_BaseClient	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    from .baseclient import BaseClient as _BaseClient  # @UnusedImport$/;"	kind:namespace	line:14
+_BaseClient	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    from baseclient import BaseClient as _BaseClient  # @Reimport$/;"	kind:namespace	line:17
+_CT	lib/eapearson_TestRichReports/baseclient.py	/^_CT = 'content-type'$/;"	kind:variable	line:26
+_ConfigParser	lib/eapearson_TestRichReports/baseclient.py	/^    from ConfigParser import ConfigParser as _ConfigParser  # py 2$/;"	kind:namespace	line:18
+_ConfigParser	lib/eapearson_TestRichReports/baseclient.py	/^    from configparser import ConfigParser as _ConfigParser  # py 3$/;"	kind:namespace	line:16
+_JSONObjectEncoder	lib/eapearson_TestRichReports/baseclient.py	/^class _JSONObjectEncoder(_json.JSONEncoder):$/;"	kind:class	line:86
+_KBaseAuth	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from eapearson_TestRichReports.authclient import KBaseAuth as _KBaseAuth$/;"	kind:namespace	line:19
+_LOGIN_URL	lib/eapearson_TestRichReports/authclient.py	/^    _LOGIN_URL = 'https:\/\/kbase.us\/services\/authorization\/Sessions\/Login'$/;"	kind:variable	line:60
+_MAX_TIME_SEC	lib/eapearson_TestRichReports/authclient.py	/^    _MAX_TIME_SEC = 5 * 60  # 5 min$/;"	kind:variable	line:17
+_URL_SCHEME	lib/eapearson_TestRichReports/baseclient.py	/^_URL_SCHEME = frozenset(['http', 'https'])$/;"	kind:variable	line:28
+__call__	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def __call__(self, environ, start_response):$/;"	kind:member	line:342
+__init__	lib/eapearson_TestRichReports/authclient.py	/^    def __init__(self, auth_url=None):$/;"	kind:member	line:62
+__init__	lib/eapearson_TestRichReports/authclient.py	/^    def __init__(self, maxsize=2000):$/;"	kind:member	line:21
+__init__	lib/eapearson_TestRichReports/baseclient.py	/^    def __init__($/;"	kind:member	line:120
+__init__	lib/eapearson_TestRichReports/baseclient.py	/^    def __init__(self, name, code, message, data=None, error=None):$/;"	kind:member	line:73
+__init__	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    def __init__($/;"	kind:member	line:22
+__init__	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    def __init__(self, config):$/;"	kind:member	line:39
+__init__	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def __init__(self):$/;"	kind:member	line:320
+__init__	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def __init__(self, logger):$/;"	kind:member	line:193
+__init__	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def __init__(self, name, code, message, data=None, error=None):$/;"	kind:member	line:280
+__init__.py	lib/eapearson_TestRichReports/__init__.py	1;"	kind:file	line:1
+__str__	lib/eapearson_TestRichReports/baseclient.py	/^    def __str__(self):$/;"	kind:member	line:81
+__str__	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def __str__(self):$/;"	kind:member	line:288
+_call	lib/eapearson_TestRichReports/baseclient.py	/^    def _call(self, url, method, params, context=None):$/;"	kind:member	line:163
+_call_method	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def _call_method(self, ctx, request):$/;"	kind:member	line:80
+_check_job	lib/eapearson_TestRichReports/baseclient.py	/^    def _check_job(self, service, job_id):$/;"	kind:member	line:215
+_get_service_url	lib/eapearson_TestRichReports/baseclient.py	/^    def _get_service_url(self, service_method, service_version):$/;"	kind:member	line:199
+_get_token	lib/eapearson_TestRichReports/baseclient.py	/^def _get_token(user_id, password, auth_svc):$/;"	kind:function	line:31
+_handle_request	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def _handle_request(self, ctx, request):$/;"	kind:member	line:172
+_json	lib/eapearson_TestRichReports/baseclient.py	/^import json as _json$/;"	kind:namespace	line:10
+_lock	lib/eapearson_TestRichReports/authclient.py	/^    _lock = _threading.RLock()$/;"	kind:variable	line:19
+_log	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def _log(self, level, message):$/;"	kind:member	line:231
+_os	lib/eapearson_TestRichReports/baseclient.py	/^import os as _os$/;"	kind:namespace	line:13
+_proc	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^_proc = None$/;"	kind:variable	line:512
+_random	lib/eapearson_TestRichReports/baseclient.py	/^import random as _random$/;"	kind:namespace	line:12
+_random	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import random as _random$/;"	kind:namespace	line:17
+_read_inifile	lib/eapearson_TestRichReports/baseclient.py	/^def _read_inifile(file=_os.environ.get(  # @ReservedAssignment$/;"	kind:function	line:51
+_requests	lib/eapearson_TestRichReports/authclient.py	/^import requests as _requests$/;"	kind:namespace	line:9
+_requests	lib/eapearson_TestRichReports/baseclient.py	/^import requests as _requests$/;"	kind:namespace	line:11
+_requests	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import requests as _requests$/;"	kind:namespace	line:16
+_set_up_context	lib/eapearson_TestRichReports/baseclient.py	/^    def _set_up_context(self, service_ver=None, context=None):$/;"	kind:member	line:208
+_submit_job	lib/eapearson_TestRichReports/baseclient.py	/^    def _submit_job(self, service_method, args, service_ver=None,$/;"	kind:member	line:218
+_threading	lib/eapearson_TestRichReports/authclient.py	/^import threading as _threading$/;"	kind:namespace	line:10
+_time	lib/eapearson_TestRichReports/authclient.py	/^import time as _time$/;"	kind:namespace	line:8
+_urlparse	lib/eapearson_TestRichReports/baseclient.py	/^    from urllib.parse import urlparse as _urlparse  # py3$/;"	kind:namespace	line:21
+_urlparse	lib/eapearson_TestRichReports/baseclient.py	/^    from urlparse import urlparse as _urlparse  # py2$/;"	kind:namespace	line:23
+add_valid_token	lib/eapearson_TestRichReports/authclient.py	/^    def add_valid_token(self, token, user):$/;"	kind:member	line:38
+application	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^application = Application()$/;"	kind:variable	line:481
+authclient.py	lib/eapearson_TestRichReports/authclient.py	1;"	kind:file	line:1
+baseclient.py	lib/eapearson_TestRichReports/baseclient.py	1;"	kind:file	line:1
+call	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def call(self, ctx, jsondata):$/;"	kind:member	line:66
+call_method	lib/eapearson_TestRichReports/baseclient.py	/^    def call_method(self, service_method, args, service_ver=None,$/;"	kind:member	line:254
+call_py	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def call_py(self, ctx, jsondata):$/;"	kind:member	line:116
+clear_log_level	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def clear_log_level(self):$/;"	kind:member	line:228
+config	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^config = get_config()$/;"	kind:variable	line:46
+config	scripts/prepare_deploy_cfg.py	/^    config = ConfigParser()$/;"	kind:variable	line:17
+datetime	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import datetime$/;"	kind:namespace	line:7
+default	lib/eapearson_TestRichReports/baseclient.py	/^    def default(self, obj):$/;"	kind:member	line:88
+default	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def default(self, obj):$/;"	kind:member	line:54
+eapearson_TestRichReports	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^class eapearson_TestRichReports(object):$/;"	kind:class	line:20
+eapearson_TestRichReports	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^class eapearson_TestRichReports:$/;"	kind:class	line:12
+eapearson_TestRichReports	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsImpl import eapearson_TestRichReports  # noqa @IgnorePep8$/;"	kind:namespace	line:48
+eapearson_TestRichReports	test/eapearson_TestRichReports_server_test.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsImpl import eapearson_TestRichReports$/;"	kind:namespace	line:17
+eapearson_TestRichReportsClient.py	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	1;"	kind:file	line:1
+eapearson_TestRichReportsImpl.py	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	1;"	kind:file	line:1
+eapearson_TestRichReportsServer.py	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	1;"	kind:file	line:1
+eapearson_TestRichReportsTest	test/eapearson_TestRichReports_server_test.py	/^class eapearson_TestRichReportsTest(unittest.TestCase):$/;"	kind:class	line:21
+eapearson_TestRichReports_server_test.py	test/eapearson_TestRichReports_server_test.py	1;"	kind:file	line:1
+environ	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from os import environ$/;"	kind:namespace	line:13
+environ	test/eapearson_TestRichReports_server_test.py	/^from os import environ$/;"	kind:namespace	line:8
+file	scripts/prepare_deploy_cfg.py	/^    file = open(sys.argv[1], 'r')$/;"	kind:variable	line:14
+filter_contigs	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    def filter_contigs(self, params, context=None):$/;"	kind:member	line:36
+filter_contigs	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    def filter_contigs(self, ctx, params):$/;"	kind:member	line:46
+getContext	test/eapearson_TestRichReports_server_test.py	/^    def getContext(self):$/;"	kind:member	line:71
+getIPAddress	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def getIPAddress(environ):$/;"	kind:function	line:293
+getImpl	test/eapearson_TestRichReports_server_test.py	/^    def getImpl(self):$/;"	kind:member	line:68
+getWsClient	test/eapearson_TestRichReports_server_test.py	/^    def getWsClient(self):$/;"	kind:member	line:56
+getWsName	test/eapearson_TestRichReports_server_test.py	/^    def getWsName(self):$/;"	kind:member	line:59
+get_config	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def get_config():$/;"	kind:function	line:36
+get_config_file	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def get_config_file():$/;"	kind:function	line:28
+get_log_level	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def get_log_level(self):$/;"	kind:member	line:225
+get_service_name	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def get_service_name():$/;"	kind:function	line:32
+get_user	lib/eapearson_TestRichReports/authclient.py	/^    def get_user(self, token):$/;"	kind:member	line:26
+get_user	lib/eapearson_TestRichReports/authclient.py	/^    def get_user(self, token):$/;"	kind:member	line:71
+getopt	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from getopt import getopt, GetoptError$/;"	kind:namespace	line:9
+hashlib	lib/eapearson_TestRichReports/authclient.py	/^import hashlib$/;"	kind:namespace	line:11
+host	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^            host = a$/;"	kind:variable	line:615
+host	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    host = 'localhost'$/;"	kind:variable	line:610
+impl_eapearson_TestRichReports	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^impl_eapearson_TestRichReports = eapearson_TestRichReports(config)$/;"	kind:variable	line:49
+json	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import json$/;"	kind:namespace	line:5
+json	test/eapearson_TestRichReports_server_test.py	/^import json  # noqa: F401$/;"	kind:namespace	line:4
+kbase_endpoint	scripts/prepare_deploy_cfg.py	/^        kbase_endpoint = os.environ.get("KBASE_ENDPOINT")$/;"	kind:variable	line:21
+log	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def log(self, level, context, message):$/;"	kind:member	line:315
+log	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from biokbase import log$/;"	kind:namespace	line:15
+log_debug	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def log_debug(self, message, level=1):$/;"	kind:member	line:212
+log_err	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def log_err(self, message):$/;"	kind:member	line:206
+log_info	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def log_info(self, message):$/;"	kind:member	line:209
+logcallback	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def logcallback(self):$/;"	kind:member	line:312
+make_server	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from wsgiref.simple_server import make_server$/;"	kind:namespace	line:3
+monkey	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^        from gevent import monkey$/;"	kind:namespace	line:505
+noqa	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsImpl import eapearson_TestRichReports  # noqa @IgnorePep8$/;"	kind:namespace	line:48
+noqa	test/eapearson_TestRichReports_server_test.py	/^from pprint import pprint  # noqa: F401$/;"	kind:namespace	line:14
+noqa	test/eapearson_TestRichReports_server_test.py	/^import json  # noqa: F401$/;"	kind:namespace	line:4
+noqa	test/eapearson_TestRichReports_server_test.py	/^import os  # noqa: F401$/;"	kind:namespace	line:3
+now_in_utc	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def now_in_utc(self):$/;"	kind:member	line:472
+os	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import os$/;"	kind:namespace	line:18
+os	scripts/prepare_deploy_cfg.py	/^import os$/;"	kind:namespace	line:2
+os	scripts/prepare_deploy_cfg.py	/^import os.path$/;"	kind:namespace	line:3
+os	test/eapearson_TestRichReports_server_test.py	/^import os  # noqa: F401$/;"	kind:namespace	line:3
+output	scripts/prepare_deploy_cfg.py	/^    output = t.render(props)$/;"	kind:variable	line:31
+path	scripts/prepare_deploy_cfg.py	/^import os.path$/;"	kind:namespace	line:3
+pformat	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^from pprint import pprint, pformat$/;"	kind:namespace	line:7
+port	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^            port = int(a)$/;"	kind:variable	line:613
+port	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    port = 9999$/;"	kind:variable	line:609
+pprint	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^from pprint import pprint, pformat$/;"	kind:namespace	line:7
+pprint	test/eapearson_TestRichReports_server_test.py	/^from pprint import pprint  # noqa: F401$/;"	kind:namespace	line:14
+prepare_deploy_cfg.py	scripts/prepare_deploy_cfg.py	1;"	kind:file	line:1
+print_function	lib/eapearson_TestRichReports/baseclient.py	/^from __future__ import print_function$/;"	kind:namespace	line:8
+print_function	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^from __future__ import print_function$/;"	kind:namespace	line:9
+process_async_cli	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def process_async_cli(input_file_path, output_file_path, token):$/;"	kind:function	line:544
+process_error	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def process_error(self, error, context, request, trace=None):$/;"	kind:member	line:454
+props	scripts/prepare_deploy_cfg.py	/^    props = dict(config.items("global"))$/;"	kind:variable	line:30
+provenance	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def provenance(self):$/;"	kind:member	line:236
+py	lib/eapearson_TestRichReports/baseclient.py	/^    from ConfigParser import ConfigParser as _ConfigParser  # py 2$/;"	kind:namespace	line:18
+py	lib/eapearson_TestRichReports/baseclient.py	/^    from configparser import ConfigParser as _ConfigParser  # py 3$/;"	kind:namespace	line:16
+py2	lib/eapearson_TestRichReports/baseclient.py	/^    from urlparse import urlparse as _urlparse  # py2$/;"	kind:namespace	line:23
+py2	test/eapearson_TestRichReports_server_test.py	/^    from ConfigParser import ConfigParser  # py2$/;"	kind:namespace	line:10
+py3	lib/eapearson_TestRichReports/baseclient.py	/^    from urllib.parse import urlparse as _urlparse  # py3$/;"	kind:namespace	line:21
+py3	test/eapearson_TestRichReports_server_test.py	/^    from configparser import ConfigParser  # py3$/;"	kind:namespace	line:12
+requests	test/eapearson_TestRichReports_server_test.py	/^import requests$/;"	kind:namespace	line:6
+run_job	lib/eapearson_TestRichReports/baseclient.py	/^    def run_job(self, service_method, args, service_ver=None, context=None):$/;"	kind:member	line:225
+setUpClass	test/eapearson_TestRichReports_server_test.py	/^    def setUpClass(cls):$/;"	kind:member	line:24
+set_log_level	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def set_log_level(self, level):$/;"	kind:member	line:222
+start_server	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def start_server(host='localhost', port=0, newprocess=False):$/;"	kind:function	line:515
+status	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    def status(self, context=None):$/;"	kind:member	line:56
+status	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    def status(self, ctx):$/;"	kind:member	line:235
+stop_server	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def stop_server():$/;"	kind:function	line:538
+sys	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^import sys$/;"	kind:namespace	line:4
+sys	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import sys$/;"	kind:namespace	line:4
+sys	scripts/prepare_deploy_cfg.py	/^import sys$/;"	kind:namespace	line:1
+t	scripts/prepare_deploy_cfg.py	/^    t = Template(text)$/;"	kind:variable	line:16
+tearDownClass	test/eapearson_TestRichReports_server_test.py	/^    def tearDownClass(cls):$/;"	kind:member	line:51
+test_filter_contigs_err1	test/eapearson_TestRichReports_server_test.py	/^    def test_filter_contigs_err1(self):$/;"	kind:member	line:94
+test_filter_contigs_err2	test/eapearson_TestRichReports_server_test.py	/^    def test_filter_contigs_err2(self):$/;"	kind:member	line:100
+test_filter_contigs_err3	test/eapearson_TestRichReports_server_test.py	/^    def test_filter_contigs_err3(self):$/;"	kind:member	line:106
+test_filter_contigs_ok	test/eapearson_TestRichReports_server_test.py	/^    def test_filter_contigs_ok(self):$/;"	kind:member	line:75
+text	scripts/prepare_deploy_cfg.py	/^    text = file.read()$/;"	kind:variable	line:15
+time	lib/eapearson_TestRichReports/baseclient.py	/^import time$/;"	kind:namespace	line:24
+time	test/eapearson_TestRichReports_server_test.py	/^import time$/;"	kind:namespace	line:5
+token	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^                    token = token_file.read()$/;"	kind:variable	line:599
+token	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^                token = sys.argv[3]$/;"	kind:variable	line:601
+token	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^        token = None$/;"	kind:variable	line:595
+traceback	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^import traceback$/;"	kind:namespace	line:5
+traceback	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import traceback$/;"	kind:namespace	line:6
+unittest	test/eapearson_TestRichReports_server_test.py	/^import unittest$/;"	kind:namespace	line:2
+uuid	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^import uuid$/;"	kind:namespace	line:6
+uwsgi	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    import uwsgi$/;"	kind:namespace	line:497
+workspaceService	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^from biokbase.workspace.client import Workspace as workspaceService$/;"	kind:namespace	line:8
+workspaceService	test/eapearson_TestRichReports_server_test.py	/^from biokbase.workspace.client import Workspace as workspaceService$/;"	kind:namespace	line:16
+workspaceURL	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    workspaceURL = None$/;"	kind:variable	line:34

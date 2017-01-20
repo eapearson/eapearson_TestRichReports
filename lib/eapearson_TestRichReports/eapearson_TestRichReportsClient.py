@@ -33,24 +33,17 @@ class eapearson_TestRichReports(object):
             trust_all_ssl_certificates=trust_all_ssl_certificates,
             auth_svc=auth_svc)
 
-    def filter_contigs(self, params, context=None):
+    def generate_report(self, params, context=None):
         """
         Filter contigs in a ContigSet by DNA length
-        :param params: instance of type "FilterContigsParams" -> structure:
-           parameter "workspace" of type "workspace_name" (A string
-           representing a workspace name.), parameter "contigset_id" of type
-           "contigset_id" (A string representing a ContigSet id.), parameter
-           "min_length" of Long
-        :returns: instance of type "FilterContigsResults" -> structure:
-           parameter "report_name" of String, parameter "report_ref" of
-           String, parameter "new_contigset_ref" of type "ws_contigset_id"
-           (The workspace ID for a ContigSet data object. @id ws
-           KBaseGenomes.ContigSet), parameter "n_initial_contigs" of Long,
-           parameter "n_contigs_removed" of Long, parameter
-           "n_contigs_remaining" of Long
+        :param params: instance of type "GenerateReportParams" -> structure:
+           parameter "direct_html" of String, parameter "summary_content" of
+           String
+        :returns: instance of type "GenerateReportResults" -> structure:
+           parameter "report_name" of String, parameter "report_ref" of String
         """
         return self._client.call_method(
-            'eapearson_TestRichReports.filter_contigs',
+            'eapearson_TestRichReports.generate_report',
             [params], self._service_ver, context)
 
     def status(self, context=None):
