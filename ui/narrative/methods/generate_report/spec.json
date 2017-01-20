@@ -18,7 +18,6 @@
             "default_values": [""],
             "field_type": "textarea",
             "text_options": {
-
             }
         },
         {
@@ -29,7 +28,16 @@
             "default_values": [""],
             "field_type": "textarea",
             "text_options": {
-
+            }
+        },
+        {
+            "id": "html_files",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": true,
+            "default_values": [""],
+            "field_type": "file",
+            "text_options": {
             }
         }
     ],
@@ -50,6 +58,10 @@
                 {
                     "input_parameter": "message",
                     "target_property": "message"
+                },
+                {
+                    "input_parameter": "html_files",
+                    "target_property": "html_files"
                 }
             ],
             "output_mapping": [

@@ -127,6 +127,7 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	workspace has a value which is a string
 	direct_html has a value which is a string
 	message has a value which is a string
+	html_files has a value which is a reference to a list where each element is a string
 GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
 	report_ref has a value which is a string
@@ -143,6 +144,7 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	workspace has a value which is a string
 	direct_html has a value which is a string
 	message has a value which is a string
+	html_files has a value which is a reference to a list where each element is a string
 GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
 	report_ref has a value which is a string
@@ -308,6 +310,7 @@ a reference to a hash where the following keys are defined:
 workspace has a value which is a string
 direct_html has a value which is a string
 message has a value which is a string
+html_files has a value which is a reference to a list where each element is a string
 
 </pre>
 
@@ -319,6 +322,7 @@ a reference to a hash where the following keys are defined:
 workspace has a value which is a string
 direct_html has a value which is a string
 message has a value which is a string
+html_files has a value which is a reference to a list where each element is a string
 
 
 =end text

@@ -8,6 +8,7 @@ module eapearson_TestRichReports {
         string workspace;
         string direct_html;
         string message;
+        list<string> html_files;
     } GenerateReportParams;
 
     typedef structure {

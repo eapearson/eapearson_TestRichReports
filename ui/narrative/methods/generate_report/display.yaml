@@ -37,5 +37,8 @@ parameters :
             Message
         short-hint : |
             Message
+    html_files:
+        ui-name: HTML files
+        short-hint: HTML files
 description : |
     <p>This method allows one to create KBase Report objects containging rich html.</p>

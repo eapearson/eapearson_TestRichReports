@@ -38,7 +38,8 @@ class eapearson_TestRichReports(object):
         Filter contigs in a ContigSet by DNA length
         :param params: instance of type "GenerateReportParams" -> structure:
            parameter "workspace" of String, parameter "direct_html" of
-           String, parameter "message" of String
+           String, parameter "message" of String, parameter "html_files" of
+           list of String
         :returns: instance of type "GenerateReportResults" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """

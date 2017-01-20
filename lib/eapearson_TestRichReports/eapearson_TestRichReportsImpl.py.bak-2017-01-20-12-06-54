@@ -29,7 +29,7 @@ This sample module contains one small method - filter_contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "ssh://git@github.com/eapearson/eapearson_TestRichReports.git"
-    GIT_COMMIT_HASH = "94cdb3ab2e64c27d329455f342f340e36523ed78"
+    GIT_COMMIT_HASH = "6f9e783e107970b0feb0d314aeb8edb738e03a07"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -52,8 +52,7 @@ This sample module contains one small method - filter_contigs.
         Filter contigs in a ContigSet by DNA length
         :param params: instance of type "GenerateReportParams" -> structure:
            parameter "workspace" of String, parameter "direct_html" of
-           String, parameter "message" of String, parameter "html_files" of
-           list of String
+           String, parameter "message" of String
         :returns: instance of type "GenerateReportResults" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """
