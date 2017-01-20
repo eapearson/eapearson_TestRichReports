@@ -28,7 +28,7 @@ This sample module contains one small method - filter_contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "ssh://git@github.com/eapearson/eapearson_TestRichReports.git"
-    GIT_COMMIT_HASH = "c2b296b0fe0de2bbc9f6eb89437487c7f8f496c2"
+    GIT_COMMIT_HASH = "c71ada2ea00dec5afdeefa044d960c4b7a7733f1"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
