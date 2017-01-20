@@ -19,16 +19,34 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("com.googlecode.jsonschema2pojo")
 @JsonPropertyOrder({
+    "workspace",
     "direct_html",
-    "summary_content"
+    "summary"
 })
 public class GenerateReportParams {
 
+    @JsonProperty("workspace")
+    private String workspace;
     @JsonProperty("direct_html")
     private String directHtml;
-    @JsonProperty("summary_content")
-    private String summaryContent;
+    @JsonProperty("summary")
+    private String summary;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    @JsonProperty("workspace")
+    public String getWorkspace() {
+        return workspace;
+    }
+
+    @JsonProperty("workspace")
+    public void setWorkspace(String workspace) {
+        this.workspace = workspace;
+    }
+
+    public GenerateReportParams withWorkspace(String workspace) {
+        this.workspace = workspace;
+        return this;
+    }
 
     @JsonProperty("direct_html")
     public String getDirectHtml() {
@@ -45,18 +63,18 @@ public class GenerateReportParams {
         return this;
     }
 
-    @JsonProperty("summary_content")
-    public String getSummaryContent() {
-        return summaryContent;
+    @JsonProperty("summary")
+    public String getSummary() {
+        return summary;
     }
 
-    @JsonProperty("summary_content")
-    public void setSummaryContent(String summaryContent) {
-        this.summaryContent = summaryContent;
+    @JsonProperty("summary")
+    public void setSummary(String summary) {
+        this.summary = summary;
     }
 
-    public GenerateReportParams withSummaryContent(String summaryContent) {
-        this.summaryContent = summaryContent;
+    public GenerateReportParams withSummary(String summary) {
+        this.summary = summary;
         return this;
     }
 
@@ -72,7 +90,7 @@ public class GenerateReportParams {
 
     @Override
     public String toString() {
-        return ((((((("GenerateReportParams"+" [directHtml=")+ directHtml)+", summaryContent=")+ summaryContent)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", summary=")+ summary)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }

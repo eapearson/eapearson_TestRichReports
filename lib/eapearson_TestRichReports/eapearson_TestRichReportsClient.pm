@@ -124,8 +124,9 @@ sub new
 $params is an eapearson_TestRichReports.GenerateReportParams
 $return is an eapearson_TestRichReports.GenerateReportResults
 GenerateReportParams is a reference to a hash where the following keys are defined:
+	workspace has a value which is a string
 	direct_html has a value which is a string
-	summary_content has a value which is a string
+	summary has a value which is a string
 GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
 	report_ref has a value which is a string
@@ -139,8 +140,9 @@ GenerateReportResults is a reference to a hash where the following keys are defi
 $params is an eapearson_TestRichReports.GenerateReportParams
 $return is an eapearson_TestRichReports.GenerateReportResults
 GenerateReportParams is a reference to a hash where the following keys are defined:
+	workspace has a value which is a string
 	direct_html has a value which is a string
-	summary_content has a value which is a string
+	summary has a value which is a string
 GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
 	report_ref has a value which is a string
@@ -303,8 +305,9 @@ sub _validate_version {
 
 <pre>
 a reference to a hash where the following keys are defined:
+workspace has a value which is a string
 direct_html has a value which is a string
-summary_content has a value which is a string
+summary has a value which is a string
 
 </pre>
 
@@ -313,8 +316,9 @@ summary_content has a value which is a string
 =begin text
 
 a reference to a hash where the following keys are defined:
+workspace has a value which is a string
 direct_html has a value which is a string
-summary_content has a value which is a string
+summary has a value which is a string
 
 
 =end text
