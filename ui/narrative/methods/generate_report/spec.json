@@ -22,7 +22,7 @@
             }
         },
         {
-            "id": "summary",
+            "id": "message",
             "optional": true,
             "advanced": false,
             "allow_multiple": false,
@@ -48,8 +48,8 @@
                     "target_property": "direct_html"
                 },
                 {
-                    "input_parameter": "summary",
-                    "target_property": "summary"
+                    "input_parameter": "message",
+                    "target_property": "message"
                 }
             ],
             "output_mapping": [

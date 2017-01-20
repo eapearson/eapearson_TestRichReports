@@ -7,7 +7,7 @@ module eapearson_TestRichReports {
     typedef structure {
         string workspace;
         string direct_html;
-        string summary;
+        string message;
     } GenerateReportParams;
 
     typedef structure {

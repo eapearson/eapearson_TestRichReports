@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "workspace",
     "direct_html",
-    "summary"
+    "message"
 })
 public class GenerateReportParams {
 
@@ -29,8 +29,8 @@ public class GenerateReportParams {
     private String workspace;
     @JsonProperty("direct_html")
     private String directHtml;
-    @JsonProperty("summary")
-    private String summary;
+    @JsonProperty("message")
+    private String message;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("workspace")
@@ -63,18 +63,18 @@ public class GenerateReportParams {
         return this;
     }
 
-    @JsonProperty("summary")
-    public String getSummary() {
-        return summary;
+    @JsonProperty("message")
+    public String getMessage() {
+        return message;
     }
 
-    @JsonProperty("summary")
-    public void setSummary(String summary) {
-        this.summary = summary;
+    @JsonProperty("message")
+    public void setMessage(String message) {
+        this.message = message;
     }
 
-    public GenerateReportParams withSummary(String summary) {
-        this.summary = summary;
+    public GenerateReportParams withMessage(String message) {
+        this.message = message;
         return this;
     }
 
@@ -90,7 +90,7 @@ public class GenerateReportParams {
 
     @Override
     public String toString() {
-        return ((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", summary=")+ summary)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }

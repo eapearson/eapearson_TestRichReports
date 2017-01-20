@@ -32,10 +32,10 @@ parameters :
             Direct Html
         short-hint : |
             Direct html
-    summary :
+    message :
         ui-name : |
-            Summary
+            Message
         short-hint : |
-            Summary
+            Message
 description : |
     <p>This method allows one to create KBase Report objects containging rich html.</p>
