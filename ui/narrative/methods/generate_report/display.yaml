@@ -26,6 +26,12 @@ suggestions:
 #
 # Configure the display and description of parameters
 #
+
+parameter-groups:
+    html_files:
+        ui-name: HTML files
+        short-hint: HTML files
+
 parameters :
     direct_html :
         ui-name : |
@@ -37,8 +43,15 @@ parameters :
             Message
         short-hint : |
             Message
-    html_files:
-        ui-name: HTML files
-        short-hint: HTML files
+    shock_id:
+        ui-name: Shock ID 
+        short-hint: Shock ID 
+    index_name:
+        ui-name: Index Name 
+        short-hint: Index Name 
+    description:
+        ui-name: Description 
+        short-hint: Description
+
 description : |
     <p>This method allows one to create KBase Report objects containging rich html.</p>

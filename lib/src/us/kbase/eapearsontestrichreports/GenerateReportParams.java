@@ -28,87 +28,87 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class GenerateReportParams {
 
     @JsonProperty("workspace")
-    private java.lang.String workspace;
+    private String workspace;
     @JsonProperty("direct_html")
-    private java.lang.String directHtml;
+    private String directHtml;
     @JsonProperty("message")
-    private java.lang.String message;
+    private String message;
     @JsonProperty("html_files")
-    private List<String> htmlFiles;
-    private Map<java.lang.String, Object> additionalProperties = new HashMap<java.lang.String, Object>();
+    private List<ReportZip> htmlFiles;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("workspace")
-    public java.lang.String getWorkspace() {
+    public String getWorkspace() {
         return workspace;
     }
 
     @JsonProperty("workspace")
-    public void setWorkspace(java.lang.String workspace) {
+    public void setWorkspace(String workspace) {
         this.workspace = workspace;
     }
 
-    public GenerateReportParams withWorkspace(java.lang.String workspace) {
+    public GenerateReportParams withWorkspace(String workspace) {
         this.workspace = workspace;
         return this;
     }
 
     @JsonProperty("direct_html")
-    public java.lang.String getDirectHtml() {
+    public String getDirectHtml() {
         return directHtml;
     }
 
     @JsonProperty("direct_html")
-    public void setDirectHtml(java.lang.String directHtml) {
+    public void setDirectHtml(String directHtml) {
         this.directHtml = directHtml;
     }
 
-    public GenerateReportParams withDirectHtml(java.lang.String directHtml) {
+    public GenerateReportParams withDirectHtml(String directHtml) {
         this.directHtml = directHtml;
         return this;
     }
 
     @JsonProperty("message")
-    public java.lang.String getMessage() {
+    public String getMessage() {
         return message;
     }
 
     @JsonProperty("message")
-    public void setMessage(java.lang.String message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
-    public GenerateReportParams withMessage(java.lang.String message) {
+    public GenerateReportParams withMessage(String message) {
         this.message = message;
         return this;
     }
 
     @JsonProperty("html_files")
-    public List<String> getHtmlFiles() {
+    public List<ReportZip> getHtmlFiles() {
         return htmlFiles;
     }
 
     @JsonProperty("html_files")
-    public void setHtmlFiles(List<String> htmlFiles) {
+    public void setHtmlFiles(List<ReportZip> htmlFiles) {
         this.htmlFiles = htmlFiles;
     }
 
-    public GenerateReportParams withHtmlFiles(List<String> htmlFiles) {
+    public GenerateReportParams withHtmlFiles(List<ReportZip> htmlFiles) {
         this.htmlFiles = htmlFiles;
         return this;
     }
 
     @JsonAnyGetter
-    public Map<java.lang.String, Object> getAdditionalProperties() {
+    public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
     }
 
     @JsonAnySetter
-    public void setAdditionalProperties(java.lang.String name, Object value) {
+    public void setAdditionalProperties(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return ((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", htmlFiles=")+ htmlFiles)+", additionalProperties=")+ additionalProperties)+"]");
     }
 

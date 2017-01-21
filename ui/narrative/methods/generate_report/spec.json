@@ -9,6 +9,20 @@
         "input": null,
         "output": "kbaseReportView"
     },
+    "parameter-groups": [
+        {
+            "id": "html_files",
+            "parameters": [
+                "shock_id",
+                "index_name",
+                "description"
+            ],
+            "optional": true,
+            "allow_multiple": false,
+            "with_border": true
+
+        }
+    ],
     "parameters": [ 
         {
             "id": "direct_html",
@@ -31,12 +45,32 @@
             }
         },
         {
-            "id": "html_files",
+            "id": "shock_id",
             "optional": true,
             "advanced": false,
-            "allow_multiple": true,
+            "allow_multiple": false,
             "default_values": [""],
             "field_type": "file",
+            "text_options": {
+            }
+        },
+        {
+            "id": "index_name",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+            }
+        },
+        {
+            "id": "description",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "textarea",
             "text_options": {
             }
         }

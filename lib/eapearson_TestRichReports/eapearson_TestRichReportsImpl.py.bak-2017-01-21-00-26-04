@@ -29,7 +29,7 @@ This sample module contains one small method - filter_contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "ssh://git@github.com/eapearson/eapearson_TestRichReports.git"
-    GIT_COMMIT_HASH = "fefa7b5b11b29165f27b2eba30e84c5d1d5819fb"
+    GIT_COMMIT_HASH = "a1f022e8466bc6d389890041a9381482d0178103"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -53,9 +53,7 @@ This sample module contains one small method - filter_contigs.
         :param params: instance of type "GenerateReportParams" -> structure:
            parameter "workspace" of String, parameter "direct_html" of
            String, parameter "message" of String, parameter "html_files" of
-           list of type "ReportZip" -> structure: parameter "shock_id" of
-           String, parameter "index_name" of String, parameter "description"
-           of String
+           list of String
         :returns: instance of type "GenerateReportResults" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """
@@ -67,11 +65,11 @@ This sample module contains one small method - filter_contigs.
         html_links = []
 
         html_files = params['html_files']
-        for html_file in html_files:
+        for shock_id in html_files:
             html_links.append({
-                'shock_id': html_file['shock_id'],
-                'description': html_file['description'],
-                'name': html_file['index_name']
+                'shock_id': shock_id,
+                'description': shock_id,
+                'name': 'better_file_name.html'
             })
 
         reportParams = {

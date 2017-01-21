@@ -4,16 +4,23 @@ This sample module contains one small method - filter_contigs.
 */
 
 module eapearson_TestRichReports {
+
+    typedef structure {
+        string shock_id;
+        string index_name;
+        string description;
+    } ReportZip;
+
     typedef structure {
         string workspace;
         string direct_html;
         string message;
-        list<string> html_files;
+        list<ReportZip> html_files;
     } GenerateReportParams;
 
     typedef structure {
         string report_name;
-        string report_ref;        
+        string report_ref;
     } GenerateReportResults;
 	
     /*
