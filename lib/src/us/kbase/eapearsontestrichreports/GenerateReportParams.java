@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "workspace",
     "direct_html",
     "message",
+    "report_index",
     "html_files"
 })
 public class GenerateReportParams {
@@ -33,6 +34,8 @@ public class GenerateReportParams {
     private String directHtml;
     @JsonProperty("message")
     private String message;
+    @JsonProperty("report_index")
+    private Long reportIndex;
     @JsonProperty("html_files")
     private List<ReportZip> htmlFiles;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
@@ -82,6 +85,21 @@ public class GenerateReportParams {
         return this;
     }
 
+    @JsonProperty("report_index")
+    public Long getReportIndex() {
+        return reportIndex;
+    }
+
+    @JsonProperty("report_index")
+    public void setReportIndex(Long reportIndex) {
+        this.reportIndex = reportIndex;
+    }
+
+    public GenerateReportParams withReportIndex(Long reportIndex) {
+        this.reportIndex = reportIndex;
+        return this;
+    }
+
     @JsonProperty("html_files")
     public List<ReportZip> getHtmlFiles() {
         return htmlFiles;
@@ -109,7 +127,7 @@ public class GenerateReportParams {
 
     @Override
     public String toString() {
-        return ((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", htmlFiles=")+ htmlFiles)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", reportIndex=")+ reportIndex)+", htmlFiles=")+ htmlFiles)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }

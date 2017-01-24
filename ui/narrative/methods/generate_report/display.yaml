@@ -52,6 +52,9 @@ parameters :
     description:
         ui-name: Description 
         short-hint: Description
+    report_index:
+        ui-name: Report Index 
+        short-hint: Index of the html link which is the primary report to show as output        
 
 description : |
     <p>This method allows one to create KBase Report objects containging rich html.</p>

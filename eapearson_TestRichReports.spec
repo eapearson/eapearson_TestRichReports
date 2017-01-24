@@ -15,6 +15,7 @@ module eapearson_TestRichReports {
         string workspace;
         string direct_html;
         string message;
+        int report_index;
         list<ReportZip> html_files;
     } GenerateReportParams;
 

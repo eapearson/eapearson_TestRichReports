@@ -73,6 +73,17 @@
             "field_type": "textarea",
             "text_options": {
             }
+        },
+        {
+            "id": "report_index",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "int"
+            }
         }
     ],
     "behavior": {
@@ -96,6 +107,10 @@
                 {
                     "input_parameter": "html_files",
                     "target_property": "html_files"
+                },
+                {
+                    "input_parameter": "report_index",
+                    "target_property": "report_index"
                 }
             ],
             "output_mapping": [

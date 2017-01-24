@@ -29,7 +29,7 @@ This sample module contains one small method - filter_contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "ssh://git@github.com/eapearson/eapearson_TestRichReports.git"
-    GIT_COMMIT_HASH = "505b5b0b76d3af812aa53ab9148250a470781784"
+    GIT_COMMIT_HASH = "08e525feafdcb33d8b4818ce833fb1c7c82fb091"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -52,10 +52,10 @@ This sample module contains one small method - filter_contigs.
         Filter contigs in a ContigSet by DNA length
         :param params: instance of type "GenerateReportParams" -> structure:
            parameter "workspace" of String, parameter "direct_html" of
-           String, parameter "message" of String, parameter "report_index" of
-           Long, parameter "html_files" of list of type "ReportZip" ->
-           structure: parameter "shock_id" of String, parameter "index_name"
-           of String, parameter "description" of String
+           String, parameter "message" of String, parameter "html_files" of
+           list of type "ReportZip" -> structure: parameter "shock_id" of
+           String, parameter "index_name" of String, parameter "description"
+           of String
         :returns: instance of type "GenerateReportResults" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """
@@ -81,7 +81,6 @@ This sample module contains one small method - filter_contigs.
             'file_links': file_links,
             'html_links': html_links,
             'workspace_name': params['workspace'],
-            'direct_html_link_index': params['report_index'],
             'report_object_name': 'test_rich_reports_report_' + str(uuid.uuid4())
         }
         client = KBaseReport(self.callback_url, token=ctx['token'])

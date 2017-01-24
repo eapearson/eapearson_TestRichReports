@@ -127,6 +127,7 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	workspace has a value which is a string
 	direct_html has a value which is a string
 	message has a value which is a string
+	report_index has a value which is an int
 	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 ReportZip is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
@@ -148,6 +149,7 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	workspace has a value which is a string
 	direct_html has a value which is a string
 	message has a value which is a string
+	report_index has a value which is an int
 	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 ReportZip is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
@@ -352,6 +354,7 @@ a reference to a hash where the following keys are defined:
 workspace has a value which is a string
 direct_html has a value which is a string
 message has a value which is a string
+report_index has a value which is an int
 html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 
 </pre>
@@ -364,6 +367,7 @@ a reference to a hash where the following keys are defined:
 workspace has a value which is a string
 direct_html has a value which is a string
 message has a value which is a string
+report_index has a value which is an int
 html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 
 
