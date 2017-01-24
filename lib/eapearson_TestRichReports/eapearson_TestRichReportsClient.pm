@@ -128,6 +128,8 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	direct_html has a value which is a string
 	message has a value which is a string
 	report_index has a value which is an int
+	html_window_height has a value which is a float
+	summary_window_height has a value which is a float
 	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 ReportZip is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
@@ -150,6 +152,8 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	direct_html has a value which is a string
 	message has a value which is a string
 	report_index has a value which is an int
+	html_window_height has a value which is a float
+	summary_window_height has a value which is a float
 	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 ReportZip is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
@@ -355,6 +359,8 @@ workspace has a value which is a string
 direct_html has a value which is a string
 message has a value which is a string
 report_index has a value which is an int
+html_window_height has a value which is a float
+summary_window_height has a value which is a float
 html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 
 </pre>
@@ -368,6 +374,8 @@ workspace has a value which is a string
 direct_html has a value which is a string
 message has a value which is a string
 report_index has a value which is an int
+html_window_height has a value which is a float
+summary_window_height has a value which is a float
 html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
 
 

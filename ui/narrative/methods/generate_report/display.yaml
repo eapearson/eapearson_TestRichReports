@@ -54,7 +54,13 @@ parameters :
         short-hint: Description
     report_index:
         ui-name: Report Index 
-        short-hint: Index of the html link which is the primary report to show as output        
+        short-hint: Index of the html link which is the primary report to show as output
+    html_window_height:
+        ui-name: Report Window Height
+        short-hint: Report window height; applied to reports supplied by url (not direct html)
+    summary_window_height:
+        ui-name: Summary Window Height
+        short-hint: Wummary window height (ignored)            
 
 description : |
     <p>This method allows one to create KBase Report objects containging rich html.</p>

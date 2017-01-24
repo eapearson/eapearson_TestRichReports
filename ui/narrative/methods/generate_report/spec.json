@@ -84,6 +84,32 @@
             "text_options": {
                 "validate_as": "int"
             }
+        },
+        {
+            "id": "html_window_height",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "float",
+                "min_float": "100",
+                "max_float": "1000"
+            }
+        },
+        {
+            "id": "summary_window_height",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+                "validate_as": "float",
+                "min_float": "100",
+                "max_float": "1000"
+            }
         }
     ],
     "behavior": {
@@ -111,6 +137,14 @@
                 {
                     "input_parameter": "report_index",
                     "target_property": "report_index"
+                },
+                {
+                    "input_parameter": "html_window_height",
+                    "target_property": "html_window_height"
+                },
+                {
+                    "input_parameter": "summary_window_height",
+                    "target_property": "summary_window_height"
                 }
             ],
             "output_mapping": [

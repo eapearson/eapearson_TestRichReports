@@ -24,6 +24,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "direct_html",
     "message",
     "report_index",
+    "html_window_height",
+    "summary_window_height",
     "html_files"
 })
 public class GenerateReportParams {
@@ -36,6 +38,10 @@ public class GenerateReportParams {
     private String message;
     @JsonProperty("report_index")
     private Long reportIndex;
+    @JsonProperty("html_window_height")
+    private Double htmlWindowHeight;
+    @JsonProperty("summary_window_height")
+    private Double summaryWindowHeight;
     @JsonProperty("html_files")
     private List<ReportZip> htmlFiles;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
@@ -100,6 +106,36 @@ public class GenerateReportParams {
         return this;
     }
 
+    @JsonProperty("html_window_height")
+    public Double getHtmlWindowHeight() {
+        return htmlWindowHeight;
+    }
+
+    @JsonProperty("html_window_height")
+    public void setHtmlWindowHeight(Double htmlWindowHeight) {
+        this.htmlWindowHeight = htmlWindowHeight;
+    }
+
+    public GenerateReportParams withHtmlWindowHeight(Double htmlWindowHeight) {
+        this.htmlWindowHeight = htmlWindowHeight;
+        return this;
+    }
+
+    @JsonProperty("summary_window_height")
+    public Double getSummaryWindowHeight() {
+        return summaryWindowHeight;
+    }
+
+    @JsonProperty("summary_window_height")
+    public void setSummaryWindowHeight(Double summaryWindowHeight) {
+        this.summaryWindowHeight = summaryWindowHeight;
+    }
+
+    public GenerateReportParams withSummaryWindowHeight(Double summaryWindowHeight) {
+        this.summaryWindowHeight = summaryWindowHeight;
+        return this;
+    }
+
     @JsonProperty("html_files")
     public List<ReportZip> getHtmlFiles() {
         return htmlFiles;
@@ -127,7 +163,7 @@ public class GenerateReportParams {
 
     @Override
     public String toString() {
-        return ((((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", reportIndex=")+ reportIndex)+", htmlFiles=")+ htmlFiles)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", reportIndex=")+ reportIndex)+", htmlWindowHeight=")+ htmlWindowHeight)+", summaryWindowHeight=")+ summaryWindowHeight)+", htmlFiles=")+ htmlFiles)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }

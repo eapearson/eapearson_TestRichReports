@@ -29,7 +29,7 @@ This sample module contains one small method - filter_contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "ssh://git@github.com/eapearson/eapearson_TestRichReports.git"
-    GIT_COMMIT_HASH = "ba6c5541e430464eef6b4c79be5c78a8f6fcc58a"
+    GIT_COMMIT_HASH = "505b5b0b76d3af812aa53ab9148250a470781784"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -53,10 +53,9 @@ This sample module contains one small method - filter_contigs.
         :param params: instance of type "GenerateReportParams" -> structure:
            parameter "workspace" of String, parameter "direct_html" of
            String, parameter "message" of String, parameter "report_index" of
-           Long, parameter "html_window_height" of Double, parameter
-           "summary_window_height" of Double, parameter "html_files" of list
-           of type "ReportZip" -> structure: parameter "shock_id" of String,
-           parameter "index_name" of String, parameter "description" of String
+           Long, parameter "html_files" of list of type "ReportZip" ->
+           structure: parameter "shock_id" of String, parameter "index_name"
+           of String, parameter "description" of String
         :returns: instance of type "GenerateReportResults" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """

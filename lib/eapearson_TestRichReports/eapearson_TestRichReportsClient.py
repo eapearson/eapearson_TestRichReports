@@ -39,9 +39,10 @@ class eapearson_TestRichReports(object):
         :param params: instance of type "GenerateReportParams" -> structure:
            parameter "workspace" of String, parameter "direct_html" of
            String, parameter "message" of String, parameter "report_index" of
-           Long, parameter "html_files" of list of type "ReportZip" ->
-           structure: parameter "shock_id" of String, parameter "index_name"
-           of String, parameter "description" of String
+           Long, parameter "html_window_height" of Double, parameter
+           "summary_window_height" of Double, parameter "html_files" of list
+           of type "ReportZip" -> structure: parameter "shock_id" of String,
+           parameter "index_name" of String, parameter "description" of String
         :returns: instance of type "GenerateReportResults" -> structure:
            parameter "report_name" of String, parameter "report_ref" of String
         """

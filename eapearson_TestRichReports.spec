@@ -16,6 +16,8 @@ module eapearson_TestRichReports {
         string direct_html;
         string message;
         int report_index;
+        float html_window_height;
+        float summary_window_height;
         list<ReportZip> html_files;
     } GenerateReportParams;
 
