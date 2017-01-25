@@ -26,7 +26,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "report_index",
     "html_window_height",
     "summary_window_height",
-    "html_files"
+    "html_files",
+    "files"
 })
 public class GenerateReportParams {
 
@@ -43,7 +44,9 @@ public class GenerateReportParams {
     @JsonProperty("summary_window_height")
     private Double summaryWindowHeight;
     @JsonProperty("html_files")
-    private List<ReportZip> htmlFiles;
+    private List<us.kbase.eapearsontestrichreports.ListItem> htmlFiles;
+    @JsonProperty("files")
+    private List<us.kbase.eapearsontestrichreports.ListItem> files;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("workspace")
@@ -137,17 +140,32 @@ public class GenerateReportParams {
     }
 
     @JsonProperty("html_files")
-    public List<ReportZip> getHtmlFiles() {
+    public List<us.kbase.eapearsontestrichreports.ListItem> getHtmlFiles() {
         return htmlFiles;
     }
 
     @JsonProperty("html_files")
-    public void setHtmlFiles(List<ReportZip> htmlFiles) {
+    public void setHtmlFiles(List<us.kbase.eapearsontestrichreports.ListItem> htmlFiles) {
         this.htmlFiles = htmlFiles;
     }
 
-    public GenerateReportParams withHtmlFiles(List<ReportZip> htmlFiles) {
+    public GenerateReportParams withHtmlFiles(List<us.kbase.eapearsontestrichreports.ListItem> htmlFiles) {
         this.htmlFiles = htmlFiles;
+        return this;
+    }
+
+    @JsonProperty("files")
+    public List<us.kbase.eapearsontestrichreports.ListItem> getFiles() {
+        return files;
+    }
+
+    @JsonProperty("files")
+    public void setFiles(List<us.kbase.eapearsontestrichreports.ListItem> files) {
+        this.files = files;
+    }
+
+    public GenerateReportParams withFiles(List<us.kbase.eapearsontestrichreports.ListItem> files) {
+        this.files = files;
         return this;
     }
 
@@ -163,7 +181,7 @@ public class GenerateReportParams {
 
     @Override
     public String toString() {
-        return ((((((((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", reportIndex=")+ reportIndex)+", htmlWindowHeight=")+ htmlWindowHeight)+", summaryWindowHeight=")+ summaryWindowHeight)+", htmlFiles=")+ htmlFiles)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((((((((((((("GenerateReportParams"+" [workspace=")+ workspace)+", directHtml=")+ directHtml)+", message=")+ message)+", reportIndex=")+ reportIndex)+", htmlWindowHeight=")+ htmlWindowHeight)+", summaryWindowHeight=")+ summaryWindowHeight)+", htmlFiles=")+ htmlFiles)+", files=")+ files)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }

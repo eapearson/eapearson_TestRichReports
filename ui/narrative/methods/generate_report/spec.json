@@ -22,6 +22,19 @@
             "allow_multiple": true,
             "with_border": true
 
+        },
+        {
+            "id": "files",
+            "parameters": [
+                "file_shock_id",
+                "file_name",
+                "file_label",
+                "file_description"
+            ],
+            "optional": true,
+            "allow_multiple": true,
+            "with_border": true
+
         }
     ],
     "parameters": [ 
@@ -121,6 +134,46 @@
                 "min_float": "100",
                 "max_float": "1000"
             }
+        },
+          {
+            "id": "file_shock_id",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "file",
+            "text_options": {
+            }
+        },
+        {
+            "id": "file_name",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+            }
+        },
+        {
+            "id": "file_label",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+            }
+        },
+        {
+            "id": "file_description",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "textarea",
+            "text_options": {
+            }
         }
     ],
     "behavior": {
@@ -144,6 +197,10 @@
                 {
                     "input_parameter": "html_files",
                     "target_property": "html_files"
+                },
+                {
+                    "input_parameter": "files",
+                    "target_property": "files"
                 },
                 {
                     "input_parameter": "report_index",

@@ -130,8 +130,9 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	report_index has a value which is an int
 	html_window_height has a value which is a float
 	summary_window_height has a value which is a float
-	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
-ReportZip is a reference to a hash where the following keys are defined:
+	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
+	files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
+ListItem is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
 	index_name has a value which is a string
 	label has a value which is a string
@@ -155,8 +156,9 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 	report_index has a value which is an int
 	html_window_height has a value which is a float
 	summary_window_height has a value which is a float
-	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
-ReportZip is a reference to a hash where the following keys are defined:
+	html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
+	files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
+ListItem is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
 	index_name has a value which is a string
 	label has a value which is a string
@@ -311,7 +313,7 @@ sub _validate_version {
 
 
 
-=head2 ReportZip
+=head2 ListItem
 
 =over 4
 
@@ -365,7 +367,8 @@ message has a value which is a string
 report_index has a value which is an int
 html_window_height has a value which is a float
 summary_window_height has a value which is a float
-html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
+html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
+files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
 
 </pre>
 
@@ -380,7 +383,8 @@ message has a value which is a string
 report_index has a value which is an int
 html_window_height has a value which is a float
 summary_window_height has a value which is a float
-html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ReportZip
+html_files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
+files has a value which is a reference to a list where each element is an eapearson_TestRichReports.ListItem
 
 
 =end text

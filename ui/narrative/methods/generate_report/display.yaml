@@ -31,6 +31,9 @@ parameter-groups:
     html_files:
         ui-name: HTML files
         short-hint: HTML files
+    files:
+        ui-name: Files
+        short-hint: Files you might want to download
 
 parameters :
     direct_html :
@@ -63,7 +66,19 @@ parameters :
         short-hint: Report window height; applied to reports supplied by url (not direct html)
     summary_window_height:
         ui-name: Summary Window Height
-        short-hint: Wummary window height (ignored)            
+        short-hint: Summary window height (ignored)            
+    file_shock_id:
+        ui-name: Shock ID 
+        short-hint: Shock ID 
+    file_name:
+        ui-name: File Name 
+        short-hint: File Name 
+    file_label:
+        ui-name: File label
+        short-hint: File label for the report link
+    file_description:
+        ui-name: Description 
+        short-hint: Description
 
 description : |
     <p>This method allows one to create KBase Report objects containging rich html.</p>

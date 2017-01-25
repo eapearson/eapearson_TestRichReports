@@ -10,7 +10,7 @@ module eapearson_TestRichReports {
         string index_name;
         string label;
         string description;
-    } ReportZip;
+    } ListItem;
 
     typedef structure {
         string workspace;
@@ -19,7 +19,8 @@ module eapearson_TestRichReports {
         int report_index;
         float html_window_height;
         float summary_window_height;
-        list<ReportZip> html_files;
+        list<ListItem> html_files;
+        list<ListItem> files;
     } GenerateReportParams;
 
     typedef structure {

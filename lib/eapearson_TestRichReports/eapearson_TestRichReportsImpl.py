@@ -29,7 +29,7 @@ This sample module contains one small method - filter_contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "ssh://git@github.com/eapearson/eapearson_TestRichReports.git"
-    GIT_COMMIT_HASH = "374446f28292e713ed5dc38d26d596b0423ae5ff"
+    GIT_COMMIT_HASH = "47d2fc9e9306f3a781f90d2ef957df51841f4a5b"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -55,7 +55,10 @@ This sample module contains one small method - filter_contigs.
            String, parameter "message" of String, parameter "report_index" of
            Long, parameter "html_window_height" of Double, parameter
            "summary_window_height" of Double, parameter "html_files" of list
-           of type "ReportZip" -> structure: parameter "shock_id" of String,
+           of type "ListItem" -> structure: parameter "shock_id" of String,
+           parameter "index_name" of String, parameter "label" of String,
+           parameter "description" of String, parameter "files" of list of
+           type "ListItem" -> structure: parameter "shock_id" of String,
            parameter "index_name" of String, parameter "label" of String,
            parameter "description" of String
         :returns: instance of type "GenerateReportResults" -> structure:
@@ -77,10 +80,10 @@ This sample module contains one small method - filter_contigs.
                 'label': html_file['label']
             })
             file_links.append({
-                'shock_id': html_file['shock_id'],
-                'description': html_file['description'],
-                'name': html_file['index_name'],
-                'label': html_file['label']
+                'shock_id': html_file['file_shock_id'],
+                'description': html_file['file_description'],
+                'name': html_file['file_name'],
+                'label': html_file['file_label']
             })
 
         reportParams = {
