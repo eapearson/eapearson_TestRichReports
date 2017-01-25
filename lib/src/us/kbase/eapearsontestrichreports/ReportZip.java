@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "shock_id",
     "index_name",
+    "label",
     "description"
 })
 public class ReportZip {
@@ -29,6 +30,8 @@ public class ReportZip {
     private String shockId;
     @JsonProperty("index_name")
     private String indexName;
+    @JsonProperty("label")
+    private String label;
     @JsonProperty("description")
     private String description;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
@@ -63,6 +66,21 @@ public class ReportZip {
         return this;
     }
 
+    @JsonProperty("label")
+    public String getLabel() {
+        return label;
+    }
+
+    @JsonProperty("label")
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public ReportZip withLabel(String label) {
+        this.label = label;
+        return this;
+    }
+
     @JsonProperty("description")
     public String getDescription() {
         return description;
@@ -90,7 +108,7 @@ public class ReportZip {
 
     @Override
     public String toString() {
-        return ((((((((("ReportZip"+" [shockId=")+ shockId)+", indexName=")+ indexName)+", description=")+ description)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((((("ReportZip"+" [shockId=")+ shockId)+", indexName=")+ indexName)+", label=")+ label)+", description=")+ description)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }

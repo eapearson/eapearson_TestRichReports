@@ -8,6 +8,7 @@ module eapearson_TestRichReports {
     typedef structure {
         string shock_id;
         string index_name;
+        string label;
         string description;
     } ReportZip;
 

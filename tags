@@ -16,7 +16,7 @@ DEPLOY	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^DEPLOY
 F401	test/eapearson_TestRichReports_server_test.py	/^from pprint import pprint  # noqa: F401$/;"	kind:namespace	line:14
 F401	test/eapearson_TestRichReports_server_test.py	/^import json  # noqa: F401$/;"	kind:namespace	line:4
 F401	test/eapearson_TestRichReports_server_test.py	/^import os  # noqa: F401$/;"	kind:namespace	line:3
-GIT_COMMIT_HASH	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_COMMIT_HASH = "505b5b0b76d3af812aa53ab9148250a470781784"$/;"	kind:variable	line:32
+GIT_COMMIT_HASH	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_COMMIT_HASH = "a7a0e8c5d9b361fc586551dff57b51bf6bcb1683"$/;"	kind:variable	line:32
 GIT_URL	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_URL = "ssh:\/\/git@github.com\/eapearson\/eapearson_TestRichReports.git"$/;"	kind:variable	line:31
 GetoptError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from getopt import getopt, GetoptError$/;"	kind:namespace	line:9
 IgnorePep8	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsImpl import eapearson_TestRichReports  # noqa @IgnorePep8$/;"	kind:namespace	line:48
@@ -240,8 +240,8 @@ setUpClass	test/eapearson_TestRichReports_server_test.py	/^    def setUpClass(cl
 set_log_level	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^    def set_log_level(self, level):$/;"	kind:member	line:222
 start_server	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def start_server(host='localhost', port=0, newprocess=False):$/;"	kind:function	line:515
 status	lib/KBaseReport/KBaseReportClient.py	/^    def status(self, context=None):$/;"	kind:member	line:167
-status	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    def status(self, context=None):$/;"	kind:member	line:52
-status	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    def status(self, ctx):$/;"	kind:member	line:100
+status	lib/eapearson_TestRichReports/eapearson_TestRichReportsClient.py	/^    def status(self, context=None):$/;"	kind:member	line:53
+status	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    def status(self, ctx):$/;"	kind:member	line:109
 stop_server	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^def stop_server():$/;"	kind:function	line:538
 sys	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^import sys$/;"	kind:namespace	line:5
 sys	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^import sys$/;"	kind:namespace	line:4

@@ -49,6 +49,9 @@ parameters :
     index_name:
         ui-name: Index Name 
         short-hint: Index Name 
+    label:
+        ui-name: Index label
+        short-hint: Label for the report link
     description:
         ui-name: Description 
         short-hint: Description

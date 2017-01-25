@@ -134,6 +134,7 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 ReportZip is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
 	index_name has a value which is a string
+	label has a value which is a string
 	description has a value which is a string
 GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
@@ -158,6 +159,7 @@ GenerateReportParams is a reference to a hash where the following keys are defin
 ReportZip is a reference to a hash where the following keys are defined:
 	shock_id has a value which is a string
 	index_name has a value which is a string
+	label has a value which is a string
 	description has a value which is a string
 GenerateReportResults is a reference to a hash where the following keys are defined:
 	report_name has a value which is a string
@@ -323,6 +325,7 @@ sub _validate_version {
 a reference to a hash where the following keys are defined:
 shock_id has a value which is a string
 index_name has a value which is a string
+label has a value which is a string
 description has a value which is a string
 
 </pre>
@@ -334,6 +337,7 @@ description has a value which is a string
 a reference to a hash where the following keys are defined:
 shock_id has a value which is a string
 index_name has a value which is a string
+label has a value which is a string
 description has a value which is a string
 
 

@@ -15,6 +15,7 @@
             "parameters": [
                 "shock_id",
                 "index_name",
+                "label",
                 "description"
             ],
             "optional": true,
@@ -56,6 +57,16 @@
         },
         {
             "id": "index_name",
+            "optional": true,
+            "advanced": false,
+            "allow_multiple": false,
+            "default_values": [""],
+            "field_type": "text",
+            "text_options": {
+            }
+        },
+        {
+            "id": "label",
             "optional": true,
             "advanced": false,
             "allow_multiple": false,
