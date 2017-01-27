@@ -60,7 +60,7 @@
         },
         {
             "id": "shock_id",
-            "optional": true,
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [""],
@@ -70,7 +70,7 @@
         },
         {
             "id": "index_name",
-            "optional": true,
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [""],
@@ -80,7 +80,7 @@
         },
         {
             "id": "label",
-            "optional": true,
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [""],
@@ -137,7 +137,7 @@
         },
           {
             "id": "file_shock_id",
-            "optional": true,
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [""],
@@ -147,7 +147,7 @@
         },
         {
             "id": "file_name",
-            "optional": true,
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [""],
@@ -157,7 +157,7 @@
         },
         {
             "id": "file_label",
-            "optional": true,
+            "optional": false,
             "advanced": false,
             "allow_multiple": false,
             "default_values": [""],
