@@ -16,7 +16,7 @@ DEPLOY	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^DEPLOY
 F401	test/eapearson_TestRichReports_server_test.py	/^from pprint import pprint  # noqa: F401$/;"	kind:namespace	line:14
 F401	test/eapearson_TestRichReports_server_test.py	/^import json  # noqa: F401$/;"	kind:namespace	line:4
 F401	test/eapearson_TestRichReports_server_test.py	/^import os  # noqa: F401$/;"	kind:namespace	line:3
-GIT_COMMIT_HASH	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_COMMIT_HASH = "37714b2ae676fc043a7110c7ef4fd88d5883db5b"$/;"	kind:variable	line:32
+GIT_COMMIT_HASH	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_COMMIT_HASH = "abfec61085b334a38137cc8fa9ca56664bd4d721"$/;"	kind:variable	line:32
 GIT_URL	lib/eapearson_TestRichReports/eapearson_TestRichReportsImpl.py	/^    GIT_URL = "ssh:\/\/git@github.com\/eapearson\/eapearson_TestRichReports.git"$/;"	kind:variable	line:31
 GetoptError	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from getopt import getopt, GetoptError$/;"	kind:namespace	line:9
 IgnorePep8	lib/eapearson_TestRichReports/eapearson_TestRichReportsServer.py	/^from eapearson_TestRichReports.eapearson_TestRichReportsImpl import eapearson_TestRichReports  # noqa @IgnorePep8$/;"	kind:namespace	line:48
